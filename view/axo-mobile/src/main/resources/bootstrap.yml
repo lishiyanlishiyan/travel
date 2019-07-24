@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: axo-mobile
+logging:
+  level:
+    root: info
+  config: classpath:logback-spring.xml
+  path: C:/logs/axoMobileLogs
+  file: ${logging.path}/axoMobileLogs.log
+custom:
+  logging:
+    logstash:
+      nodes: 10.181.57.239:9250

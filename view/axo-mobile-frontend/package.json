@@ -1,0 +1,51 @@
+{
+  "name": "axo-mobile",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "build-cordova": "vue-cli-service build --mode cordova",
+    "lint": "vue-cli-service lint",
+    "test:unit": "vue-cli-service test:unit"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "framework7": "^4.4.0",
+    "framework7-icons": "^2.3.1",
+    "framework7-vue": "^4.4.0",
+    "lodash": "^4.17.11",
+    "material-design-icons": "^3.0.1",
+    "moment": "^2.24.0",
+    "numeral": "^2.0.6",
+    "path-to-regexp": "^3.0.0",
+    "positioning": "^1.4.0",
+    "vee-validate": "^2.2.8",
+    "vue": "^2.6.10",
+    "vue-amap": "^0.5.9",
+    "vue-localstorage": "^0.6.2",
+    "vuex": "^3.1.1",
+    "vuex-i18n": "^1.11.0",
+    "vuex-persistedstate": "^2.5.4"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.8.0",
+    "@vue/cli-plugin-eslint": "^3.8.0",
+    "@vue/cli-plugin-unit-jest": "^3.8.0",
+    "@vue/cli-service": "^3.8.0",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "@vue/test-utils": "^1.0.0-beta.29",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.8.0",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^3.6.0",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-vue": "^5.2.2",
+    "http-proxy-middleware": "^0.19.1",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.32.2"
+  }
+}

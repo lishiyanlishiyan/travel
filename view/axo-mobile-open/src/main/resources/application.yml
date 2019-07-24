@@ -1,0 +1,70 @@
+server:
+  port: 7777
+spring:
+  cloud:
+    consul:
+      host: ${HOST:localhost}
+      port: 8500
+      retry:
+        max-attempts: 60
+        initial-interval: 1000
+        max-interval: 6000
+      discovery:
+        enabled: true
+        register: true
+        instance-id: ${spring.application.name}:${HOST:localhost}:${PORT:${server.port}}
+        port: ${PORT:${server.port}}
+        prefer-ip-address: true
+        heartbeat:
+          enabled: true
+          ttl-value: 10
+  jackson:
+    deserialization:
+      ACCEPT_SINGLE_VALUE_AS_ARRAY: true
+      FAIL_ON_UNKNOWN_PROPERTIES: false
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+      INDENT_OUTPUT: false
+    mapper:
+      USE_WRAPPER_NAME_AS_PROPERTY_NAME: true
+    default-property-inclusion: non_null
+  redis:
+    cluster:
+      nodes: 10.181.3.25:7000,10.181.3.25:7001,10.181.3.25:7002,10.181.3.26:7000,10.181.3.26:7001,10.181.3.26:7002
+ws:
+  client:
+    appws:
+#      wsAddress: https://demowebservices.citsgbt.com/app-ws/services/appServiceRs
+      wsAddress: http://10.181.10.123:8080/app-ws/services/appServiceRs
+#      wsAddress: http://localhost:9090/app-ws/services/appServiceRs
+      partnerId: citsamex
+      userName: SHA696
+      userPassword: CITSAmexSHA696
+      format: json
+      encrypt-password: CITSAmexSHA696
+      encrypt-enabled: true
+      proxyExcludes:
+        - {path: profile/user, name: login}
+        - {path: profile/user, name: simulateLogin}
+        - {path: profile/user, name: getUserByLoginName}
+        - {path: profile/user, name: getUserIdByLoginName}
+security:
+  oauth2:
+    client:
+      enabled: true
+      client-id: axo_mobile
+      client-secret: 123456a
+      grant-type: password
+      access-token-uri: http://localhost:7888/oauth/token
+      scope: all
+      resource-ids: axo-resource
+swagger:
+  title: AXO移动端服务接口
+  description: AXO移动端服务接口,支持JSON请求和响应
+  version: 1.0
+  contact:
+    email: gary.fu@citsgbt.com
+    name: Gary Fu
+  base-package: com.citsgbt.mobile
+  base-path: /**
+  exclude-path: /error, /ops/**

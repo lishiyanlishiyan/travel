@@ -1,0 +1,1 @@
+call build_frontend.bat & call build_server.bat

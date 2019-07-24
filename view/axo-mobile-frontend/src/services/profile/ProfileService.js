@@ -1,0 +1,66 @@
+import { baseTaNoCompanyParam, getCallerMethod } from '../caller/ServiceCaller'
+const SERVICE_PATH = 'profile/user'
+const SERVICE_PATH1 = 'personal/info'
+const SERVICE_PATH2 = 'profile/mpp'
+const SERVICE_PATH3 = 'profile/cardinfo'
+const SERVICE_PATH4 = 'company/config'
+const GET_PROFILE_PARAM = 'com.citsamex.app.spi.data.caller.common.BaseCompanyUserParam'
+const GET_USERS_PARAM = 'com.citsamex.app.spi.data.caller.request.profile.GetUsersParam'
+const GET_ROLES_PARAM = 'com.citsamex.app.spi.data.caller.request.master.BaseCompanyParam'
+const GET_ARRANGED_TRAVELERS_PARAM = 'com.citsamex.app.spi.data.caller.request.profile.GetArrangedTravelersParam'
+const GET_TEMP_TRAVELERS_PARAM = 'com.citsamex.app.spi.data.caller.request.profile.temp.GetTempTravelersParam'
+const GET_TEMP_TRAVELERS_DETAIL_PARAM = 'com.citsamex.app.spi.data.caller.request.profile.temp.TempTravelerOperateParam'
+const UPDATE_PROFILE_PARAM = 'com.citsamex.app.spi.data.caller.request.profile.UpdateUserInfoParam'
+const SAVE_USER_PROFILE_PARAM = 'com.citsamex.app.spi.data.caller.request.profile.SaveUserProfileParam'
+const VALIDATE_USER_BEFORE_OPERATION_PARAM = 'com.citsamex.app.spi.data.caller.request.profile.ValidateUserProfileParam'
+const GET_TRAVELLERS_PARAM = 'com.citsamex.app.spi.data.caller.request.profile.GetTravellersParam'
+const UPDATE_ARRANGED_LIST = 'com.citsamex.app.spi.data.caller.request.profile.UpdateUserInfoParam'
+const LOAD_TRAVELLERS_PARAM = 'com.citsamex.app.spi.data.caller.request.profile.LoadTravellersParam'
+const GET_MEMBERSHIPS_LIST = 'com.citsamex.app.spi.data.caller.request.master.profile.GetMembershipVendorParam'
+const GET_AUTO = 'com.citsamex.app.spi.data.caller.request.profile.axo.BackupsQueryParam'
+const GRT_BAR = 'com.citsamex.app.spi.data.caller.request.profile.profilempp.GetBarCreditCardConfigParam'
+const BASE_KEY_WORDS = 'com.citsamex.app.spi.data.caller.request.master.BaseKeyWordsParam'
+export default {
+  getSofTextConfig: getCallerMethod(SERVICE_PATH4, 'getSofTextConfig', GET_ROLES_PARAM),
+  getCardBinInfo: getCallerMethod(SERVICE_PATH3, 'getCardBinInfo', BASE_KEY_WORDS),
+  getBarCreditCardConfig: getCallerMethod(SERVICE_PATH2, 'getBarCreditCardConfig', GRT_BAR),
+  getAutoTravellerBackups: getCallerMethod(SERVICE_PATH1, 'getAutoTravellerBackups', GET_AUTO),
+  getUserStatusList: getCallerMethod(SERVICE_PATH, 'getUserStatusList', GET_PROFILE_PARAM),
+  getUsers: getCallerMethod(SERVICE_PATH, 'getUsers', GET_USERS_PARAM),
+  getUserBasicInfo: getCallerMethod(SERVICE_PATH, 'getUserBasicInfo', GET_PROFILE_PARAM),
+  getRoles: getCallerMethod(SERVICE_PATH, 'getRoles', GET_ROLES_PARAM),
+  getUserRoles: getCallerMethod(SERVICE_PATH, 'getUserRoles', GET_PROFILE_PARAM),
+  getUserCerts: getCallerMethod(SERVICE_PATH, 'getUserCerts', GET_PROFILE_PARAM),
+  getManagers: getCallerMethod(SERVICE_PATH, 'getManagers', GET_PROFILE_PARAM),
+  getAgentApprovers: getCallerMethod(SERVICE_PATH, 'getAgentApprovers', GET_PROFILE_PARAM),
+  getTravelArrangers: getCallerMethod(SERVICE_PATH, 'getTravelArrangers', GET_PROFILE_PARAM),
+  getArrangedTravelers: getCallerMethod(SERVICE_PATH, 'getArrangedTravelers', GET_ARRANGED_TRAVELERS_PARAM),
+  getPreference: getCallerMethod(SERVICE_PATH, 'getPreference', GET_PROFILE_PARAM),
+  getMemberships: getCallerMethod(SERVICE_PATH, 'getMemberships', GET_PROFILE_PARAM),
+  getCreditCards: getCallerMethod(SERVICE_PATH, 'getCreditCards', GET_PROFILE_PARAM),
+  getCertTypes: getCallerMethod(SERVICE_PATH, 'getCertTypes', baseTaNoCompanyParam()),
+  getSeatPrefTypes: getCallerMethod(SERVICE_PATH, 'getSeatPrefTypes', baseTaNoCompanyParam()),
+  getMealPrefTypes: getCallerMethod(SERVICE_PATH, 'getMealPrefTypes', baseTaNoCompanyParam()),
+  getCreditCardBanks: getCallerMethod(SERVICE_PATH, 'getCreditCardBanks', baseTaNoCompanyParam()),
+  getCreditCardInstitutes: getCallerMethod(SERVICE_PATH, 'getCreditCardInstitutes', baseTaNoCompanyParam()),
+  getMembershipVendors: getCallerMethod(SERVICE_PATH, 'getMembershipVendors', GET_MEMBERSHIPS_LIST),
+  updateProfileBasic: getCallerMethod(SERVICE_PATH, 'updateProfileBasic', UPDATE_PROFILE_PARAM),
+  updateUserCerts: getCallerMethod(SERVICE_PATH, 'updateUserCerts', UPDATE_PROFILE_PARAM),
+  updateUserRoles: getCallerMethod(SERVICE_PATH, 'updateUserRoles', UPDATE_PROFILE_PARAM),
+  updateManagers: getCallerMethod(SERVICE_PATH, 'updateManagers', UPDATE_PROFILE_PARAM),
+  updateAgentApprovers: getCallerMethod(SERVICE_PATH, 'updateAgentApprovers', UPDATE_PROFILE_PARAM),
+  updatePreference: getCallerMethod(SERVICE_PATH, 'updatePreference', UPDATE_PROFILE_PARAM),
+  updateMemberships: getCallerMethod(SERVICE_PATH, 'updateMemberships', UPDATE_PROFILE_PARAM),
+  updateCreditCards: getCallerMethod(SERVICE_PATH, 'updateCreditCards', UPDATE_PROFILE_PARAM),
+  updateArrangerList: getCallerMethod(SERVICE_PATH, 'updateArrangerList', UPDATE_ARRANGED_LIST),
+  getTempTravelers: getCallerMethod(SERVICE_PATH, 'getTempTravelers', GET_TEMP_TRAVELERS_PARAM),
+  getTempTravelerDetail: getCallerMethod(SERVICE_PATH, 'getTempTravelerDetail', GET_TEMP_TRAVELERS_DETAIL_PARAM),
+  addTempTraveler: getCallerMethod(SERVICE_PATH, 'addTempTraveler', GET_TEMP_TRAVELERS_DETAIL_PARAM),
+  updateTempTraveler: getCallerMethod(SERVICE_PATH, 'updateTempTraveler', GET_TEMP_TRAVELERS_DETAIL_PARAM),
+  deleteTempTraveler: getCallerMethod(SERVICE_PATH, 'deleteTempTraveler', GET_TEMP_TRAVELERS_DETAIL_PARAM),
+  getUserDetail: getCallerMethod(SERVICE_PATH, 'getUserDetail', GET_PROFILE_PARAM),
+  saveUserProfile: getCallerMethod(SERVICE_PATH, 'saveUserProfile', SAVE_USER_PROFILE_PARAM),
+  validateUserBeforeOperation: getCallerMethod(SERVICE_PATH, 'validateUserBeforeOperation', VALIDATE_USER_BEFORE_OPERATION_PARAM),
+  getUnionTravellers: getCallerMethod(SERVICE_PATH, 'getUnionTravellers', GET_TRAVELLERS_PARAM),
+  loadTravellersById: getCallerMethod(SERVICE_PATH, 'loadTravellersById', LOAD_TRAVELLERS_PARAM)
+}

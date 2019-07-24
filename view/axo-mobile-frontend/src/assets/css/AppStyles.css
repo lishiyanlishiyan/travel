@@ -1,0 +1,647 @@
+.no-flex .item-content .item-inner {
+    display: block;
+}
+
+.axo .timeline-item-content {
+    width: 100%;
+}
+
+.md .navbar .autocomplete-dropdown .button.button-filter:not(.button-fill) {
+    color: inherit;
+}
+
+.ios .block, .ios .list {
+    margin: 15px 0;
+}
+.ios .block-title {
+    margin: 15px 15px 10px;
+}
+
+.ios .data-table-title {
+    font-size: 20px;
+}
+
+.ios .chip {
+    font-size: 12px;
+    height: 18px;
+    padding: 0px 5px;
+}
+
+.chip+.chip {
+    margin-left: 2px;
+}
+
+.text-clip{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;	
+}
+
+
+.home .homeToolbar, div[position="bottom"]{
+	bottom: 0;
+}
+
+.button[large]{
+	height: 36px!important;
+	line-height: 36px!important;
+	font-size: 18px!important;
+}
+
+.subnavbar a{
+    font-size: 15px;
+    color: var(--f7-text-color);
+}
+.subnavbar a i{
+	transition: all .3s;
+}
+.subnavbar a.present i:not(.search){
+	transform: rotate(180deg);
+}
+.ios label.item-radio input[type="radio"]:checked ~ .item-inner, 
+.subnavbar .present>a{
+    color: var(--f7-subnavbar-link-color, var(--f7-bars-link-color, var(--f7-theme-color)));
+}
+.autocomplete-dropdown .item-title{
+    font-size: var(--f7-font-size);
+}
+
+.logout>a{
+	color: #ff3b30;
+}
+
+.sheet-modal-inner{
+	overflow-y: auto!important;
+}
+.sheet-modal-inner>.block-strong{
+	margin: 0;    
+	min-height: 100%;
+}
+
+.card-footer>.link{
+	width: 100%;
+}
+
+.policyReason>ul{
+	padding: 0!important;
+}
+
+.policyReason .item-title-row{
+	display: block;
+	position: relative;
+}
+.policyReason .iconAlert{
+	position: absolute;
+	top: -25px;
+	right: 0;
+}
+.policyReason .item-after{
+    overflow: visible;
+}
+
+/*登录*/
+.login-screen-content {
+    background-image: url("../images/loginBg.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+.login-screen-content>.block {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(255,255,255, .75);
+    margin: 0!important;
+    max-width: inherit;
+}
+.ios .login-screen-title {
+    color: #fff;
+    text-shadow: 2px 3px 2px rgba(0,0,0, .75);
+    margin-top: 26vh!important;
+    font-size: 5vh;
+}
+.ios .login-screen-title::before {
+    content: "Connect";
+    display: block;
+    font-size: 8vh;    
+    line-height: 1.2;
+    font-weight: bold;
+}
+/*首页*/
+.home>.login-screen-content{
+	padding-top: 0!important;
+}
+.home>.login-screen-content>.block {
+    bottom: 50px;
+    background: transparent;
+}
+.home>.login-screen-content>.block .button{
+	border: 0;
+}
+.home>.login-screen-content>.block .item-link.active-state {
+    background-color: inherit;
+    opacity: .8;
+}
+.home>.login-screen-content>.block .item-content{
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.home>.login-screen-content>.block .domair .item-content{
+	background-image: url("../images/domair.png");
+}
+.home>.login-screen-content>.block .intlair .item-content{
+	background-image: url("../images/intlair.png");
+}
+.home>.login-screen-content>.block .hotel .item-content{
+	background-image: url("../images/hotel.png");
+}
+.home>.login-screen-content>.block .train .item-content{
+	background-image: url("../images/train.png");
+}
+.home>.login-screen-content>.block .others .item-content{
+	background-image: url("../images/other.png");
+}
+.home>.login-screen-content>.block .item-inner{
+	padding: 0;
+}
+.home>.login-screen-content>.block .item-inner>.item-title{
+	width: 100%;
+	text-align: right;
+	padding-right: 40px;
+}
+.ios .navbar, .ios .toolbar {
+    background: #009BBB;
+}
+.ios .toolbar a{
+    color: #fff;
+}
+.ios .toolbar:before {
+    display: none;
+}
+.ios .tabbar a, .ios .tabbar-labels a, .ios .navbar-inner>.left a, .ios .navbar-inner>.title, .ios .navbar-inner>.right a {
+    color: #fff;
+}
+.ios .icon-back, .ios .icon-prev {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D'12'%20height%3D'20'%20viewBox%3D'0%200%2012%2020'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%3E%3Cpath%20d%3D'M.18261596%209.4221638c.0352203-.05148305.07573462-.10050698.1215468-.14631917L9.1425872.4374202c.5830904-.58309038%201.52656832-.5849888%202.11643872.00488163.5857864.58578644.591222%201.53009836.0048816%202.11643873L3.82594417%209.9967039l7.43188553%207.4318855c.5830904.5830904.5849888%201.5265683-.0048817%202.1164387-.5857864.5857865-1.5300983.591222-2.11643868.0048816L.2980849%2010.7114853c-.3526746-.3526746-.3939974-.89699-.11546894-1.2893215z'%20fill%3D'%23FFFFFF'%20fill-rule%3D'evenodd'%2F%3E%3C%2Fsvg%3E");
+}
+.ios .navbar .tabbar a.tab-link-active, .ios .navbar .tabbar-labels a.tab-link-active {
+    color: #fff;
+    background: transparent;
+}
+.ios .navbar .tabbar a.tab-link-active span, .ios .navbar .tabbar-labels a.tab-link-active span{
+	position: relative;
+}
+.ios .navbar .tabbar a.tab-link-active span::after, .ios .navbar .tabbar-labels a.tab-link-active span::after{
+    content: "";
+    width: calc(100% + 20px);
+    height: 5px;
+    background: #006890;
+    position: absolute;
+    left: -10px;
+    bottom: -10px;
+}
+.ios .tabbar a.tab-link-active, .ios .tabbar-labels a.tab-link-active {
+    color: #fff;
+    background: #006890;
+}
+/*.ios .button.button-fill, .ios .button.button-fill-ios {
+    background: -webkit-linear-gradient(#009BBB, #006890);
+	background: -o-linear-gradient(#009BBB, #006890);
+	background: -moz-linear-gradient(#009BBB, #006890);
+	background: linear-gradient(#009BBB, #006890);
+}*/
+.button, .home .homeToolbar .toolbar-inner {
+    padding: 0;
+}
+.homeToolbar+.tabs .page-content{
+	padding-bottom: 50px;
+}
+
+.sheet-modal .icon-radio+.item-inner>div:not(.item-title){
+	padding-left: 15px;
+}
+.sheet-modal .icon-radio+.item-inner>div:not(.item-title):first-letter{
+	margin-left: -4px!important;
+}
+
+/*国内*/
+/*.domair .page-content{
+    background-image: url("../images/domairBg.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}*/
+.airList li+li>.item-content{
+	padding-right: 15px;
+	font-size: 16px;
+}
+.airList .col-20 .text-align-right{
+	white-space: nowrap;
+}
+.airList .col-25+.col-25 .icon{
+	margin-left: -20%;
+}
+.item-subtitle{
+	font-size: 14px!important;
+}
+.item-subtitle>.col-50{
+	white-space: normal;
+}
+.autocomplete-dropdown-inner .row.left{
+	margin-right: 0!important;
+}
+
+.fixed-bottom.toolbar{
+	background: #efeff4;
+/*	background: -webkit-linear-gradient(transparent, #efeff4);
+	background: -o-linear-gradient(transparent, #efeff4);
+	background: -moz-linear-gradient(transparent, #efeff4);
+	background: linear-gradient(transparent, #efeff4);*/
+}
+.fixed-bottom .toolbar-inner{
+	display: block;
+}
+.fixed-bottom.toolbar+.page-content{
+	padding-bottom: 44px;
+	overflow: auto;
+}
+
+.accordion-item .list, .accordion-item .block {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.autocomplete-dropdown-inner .list{
+	margin: 0;
+}
+.airList .button:not(.button-large), .intelAirList .button:not(.button-large){
+    border: 1px solid #009bbb;
+    color: #009bbb;
+    border-radius: 5px;
+    line-height: 27px;
+    min-height: 29px;
+}
+
+.airDetail{
+	position: relative;
+}
+.airDetail.list li:last-child > .item-link > .item-content > .item-inner:after {
+    display: block!important;
+}
+.airDetail .airReason .item-after, .item-title-row+.item-after{
+	max-width: 85%;
+}
+.airDetail .airType{
+	position: absolute;
+}
+.airDetail .data-table-title, .orderDetail .data-table-title, 
+.intelAirList .planInfo .data-table-title{
+	font-size: 22px;
+}
+.airDetail .f7-icons{
+	/*margin-top: 25px;*/
+}
+.orderDetail .f7-icons{
+	margin-top: 20px;
+}
+.airDetail .padding-bottom, .orderDetail .padding-bottom{
+	padding-bottom: 8px!important;
+}
+.airDetail .item-subtitle {
+     white-space: normal; 
+}
+.orderDetail .block-strong>.row:not(.padding-bottom):not(:empty){
+	border-top: 1px solid #c8c7cc;
+	padding: 12px 0;
+}
+.orderDetail .block-strong>.row div{
+	line-height: 24px;
+	white-space: nowrap;
+}
+
+/*国际*/
+.intelAirList .item-inner{
+	padding: 15px;
+	padding-left: 0;
+}
+.intelAirList .chip{
+	margin: 0;
+}
+.intelAirList .chip-label{
+	line-height: 18px;
+}
+.intelAirList .flightInfo{
+	color: #000;
+}
+.intelAirList .data-table-title{
+	position: relative;
+}
+.intelAirList .data-table-title>span{
+	font-size: 14px;
+	position: absolute;
+	top: -12px;
+	left: 0;
+}
+.intelAirList .flightInfo .chip{
+	margin-top: -3px;
+}
+.flightDuration{
+	height: 20px;
+	font-size: 14px;
+    margin-top: 18px;
+    position: relative;
+    color: #8b8d8e;
+    text-align: center;
+}
+.flightDuration::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: #8b8d8e;
+    bottom: 0;
+    left: 0;
+}
+.flightDuration::after{
+    content: "";
+    position: absolute;
+    border: 2.5px solid transparent;
+    border-left-color: #8b8d8e;
+    bottom: -2px;
+    right: -5px;
+    transform: scaleX(1.5);
+}
+.intelAirList .flightDuration{	
+    margin-left: -5%;
+	height: 16px;
+	font-size: 12px;
+    margin-top: -1px;
+}
+.intelAirList .flightDuration::before{
+    width: 80%;
+    left: 10%;
+}
+.intelAirList .flightDuration::after{
+    left: 90%;
+}
+.intelAirList .flightNo>.item-subtitle{
+	white-space: normal;    
+	word-break: break-all;
+}
+.intelAirList .flightNo>.item-subtitle .chip{
+	display: inline-block;
+    transform: scale(.9);	
+}
+.intelAirList .transitInfo{
+	border: 1px dashed #9c27b0;
+	border-radius: 5px;
+	padding: 3px;
+	margin: 12px 0;
+}
+.intelAirList .cabinInfo>.link{
+	display: inline-block;
+	float: right;
+}
+.intelAirList .cabinInfo+.list .item-content{
+	padding: 5px 15px;
+}
+
+/*酒店*/
+span>.chip{
+	vertical-align: text-top;
+}
+.hotel .stepper{
+	max-width: 150px;
+}
+.hotel .stepper input{
+	height: 100%;
+}
+.ios .preloader {
+    width: 20px;
+    height: 20px;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20viewBox%3D'0%200%20120%20120'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20xmlns%3Axlink%3D'http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink'%3E%3Cdefs%3E%3Cline%20id%3D'l'%20x1%3D'60'%20x2%3D'60'%20y1%3D'7'%20y2%3D'27'%20stroke%3D'%236c6c6c'%20stroke-width%3D'11'%20stroke-linecap%3D'round'%2F%3E%3C%2Fdefs%3E%3Cg%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(30%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(60%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(90%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(120%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(150%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.37'%20transform%3D'rotate(180%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.46'%20transform%3D'rotate(210%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.56'%20transform%3D'rotate(240%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.66'%20transform%3D'rotate(270%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.75'%20transform%3D'rotate(300%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.85'%20transform%3D'rotate(330%2060%2C60)'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+    background-position: 50%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    -webkit-animation: ios-preloader-spin 1s steps(12,end) infinite;
+    animation: ios-preloader-spin 1s steps(12,end) infinite;
+    font-size: 14px;
+}
+.normalWeight .item-title{
+	font-weight: normal!important;
+}
+
+.searchable .item-inner::before{
+	content: ""!important;
+}
+.searchable .item-label{
+	position: initial;
+}
+.searchable .link{
+	position: absolute;
+	right: 10px;
+	padding-top: 2px;
+}
+
+.fab-buttons a .fab-label{
+	color: #fff;
+	background-color: var(--f7-fab-bg-color, var(--f7-theme-color));
+}
+
+.tab-dropdown .menu{
+	height: 300px;
+	overflow-y: auto;
+}
+.tab-dropdown .col{
+	height: 35px;
+	line-height: 35px;
+}
+.tab-dropdown .col>.link, .tab-dropdown .col>label{
+	color: var(--f7-text-color);
+	display: block;
+	padding-left: 8px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	position: relative;
+}
+.tab-dropdown .col>.link.active{
+	background: #fff;
+	color: var(--f7-theme-color);
+}
+.tab-dropdown .col>.link>i, .tab-dropdown .block-title>i{
+	width: 6px;
+	height: 6px;
+	border-radius: 6px;
+	background: var(--f7-theme-color-text-color);
+}
+.tab-dropdown .col>.link>i{
+	position: absolute;
+	top: 6px;
+	right: 6px;
+}
+.tab-dropdown .block-title>i{
+	margin: -10px 0 0 2px;
+}
+.tab-dropdown .col>label{
+	padding-left: 23px;
+}
+.tab-dropdown .col>label::after{
+	content: "";
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: calc(100% - 15px);
+	height: 1px;
+	background: #eee;
+}
+
+.has-selected-items>a{
+	color: #ED5929!important;
+}
+
+.autocomplete-dropdown .list ul ul{
+	padding: 0;
+}
+li.item-link.searchable>.item-content>.item-inner::after {
+    display: block!important;
+}
+
+/*订单*/
+.orderDetail .block {
+    margin: 2px 0;
+}
+.page-with-subnavbar .page-content{
+	padding-top: 88px!important;
+}
+.subnavbar-inner .segmented+.common-dropdown .autocomplete-dropdown{
+	margin-top: 6px;
+}
+.orderList .item-inner{
+	padding-right: 35px;
+}
+
+.orderStatus .subnavbar-inner{
+	overflow-x: auto;
+}
+.orderStatus .subnavbar-inner .segmented{
+	width: auto;    
+	margin: 0 auto;
+	box-shadow: none;
+}
+.orderStatus .button{
+	position: relative;
+	border-radius: 0;
+	border-color: #006890;
+	color: #fff; 
+	margin: 0 6px;
+	overflow: visible;
+	min-width: inherit;
+	background: #006890;
+	padding: 0 5px;
+}
+.orderStatus .button:first-child{
+	margin-left: 0;
+}
+.orderStatus .button:last-child{
+	margin-right: 0;
+}
+.orderStatus .button:not(:first-child)::before{
+	content: "";
+	position: absolute;
+	border: 14.5px solid #006890;
+	border-left-color: transparent; 
+	left: -16px;
+	top: 0;
+	transform: scaleX(.5);
+}
+.orderStatus .button:not(:last-child)::after{
+	content: "";
+	position: absolute;
+	border: 14.5px solid transparent;
+	border-left-color: #006890;
+	right: -21px;
+	top: 0;
+	transform: scaleX(.5);
+}
+.orderStatus .button.button-active{
+	border-color: #009BBB;
+	background: #009BBB;	
+}
+.orderStatus .button.button-active::before{
+	border-color: #009BBB;
+	border-left-color: transparent; 
+}
+.orderStatus .button.button-active::after{
+	border-left-color: #009BBB;	
+}
+.orderStatus .button.button-active~.button{
+	border-color: #ddd;
+	background: #ddd;
+	color: #666; 
+}
+.orderStatus .button.button-active~.button::before{
+	border: 14.5px solid #ddd;
+	border-left-color: transparent; 
+}
+.orderStatus .button.button-active~.button::after{
+	border: 14.5px solid transparent;
+	border-left-color: #ddd;
+}
+
+.approver+.approver .block::before{
+	display: none;
+}
+
+.intelAirList .planInfo{
+	font-size: 14px;
+}
+.intelAirList .planInfo .item-inner{
+	display: block;
+}
+
+.intlOrder{
+	padding-bottom: 5px;
+}
+.intlOrder .padding-vertical{
+	padding: 10px 0!important;
+	border-top: 1px solid #c8c7cc;
+}
+.intlOrder>div:first-child .padding-vertical{
+	padding-top: 0!important;
+	border: 0;
+}
+.intlOrder .f7-icons{
+	margin: 0;
+}
+.intelAirList .item-after{
+	position: absolute;
+    right: 30px;
+    top: 22px;
+}
+
+.col-20>.chip.color-gray{
+    position: relative;
+    margin-top: 5px;
+}
+.col-20>.chip.color-gray::before{
+	content: "";
+    position: absolute;
+    width: 200%;
+    height: 1px;
+    background: #8b8d8e;
+    bottom: 9px;
+    left: -50%;	
+}
+
+/*我的*/
+.myTrip .block-title{
+    display: inline-block;
+    margin: 0;
+    border-radius: 5px;
+    background: #009BBB;
+    color: #fff;
+    padding: 5px 10px;
+    margin-left: 40px;
+}
